@@ -12,3 +12,4 @@
 1. `git init`: Mengubah folder biasa menjadi Git repository
 2. `git status`
 3. `git add .`
+4. `git commit -m "[Pesan Perubahan]"`
