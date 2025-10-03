@@ -10,6 +10,10 @@
 ## Membuat Git Repository (Folder)
 
 1. `git init`: Mengubah folder biasa menjadi Git repository
-2. `git status`
-3. `git add .`
-4. `git commit -m "[Pesan Perubahan]"`
+
+## Menambahkan File ke dalam Git Repository
+
+1. `git status`
+2. `git add .`
+3. `git commit -m "[Pesan Perubahan]"`
+4. `git log`
