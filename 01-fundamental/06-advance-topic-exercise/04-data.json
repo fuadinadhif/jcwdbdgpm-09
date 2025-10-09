@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Learning React",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "title": "Finishing code challenge 2",
+    "completed": true
+  }
+]
