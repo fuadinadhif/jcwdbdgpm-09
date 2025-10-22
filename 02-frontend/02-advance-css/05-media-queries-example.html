@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Example</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 1000px) {
+        body {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 100px; width: 100%; background-color: red"></div>
+    <div style="height: 100px; width: 100%; background-color: blue"></div>
+  </body>
+</html>

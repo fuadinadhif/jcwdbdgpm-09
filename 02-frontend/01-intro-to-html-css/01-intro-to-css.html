@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to CSS</title>
+    <style>
+      div {
+        color: white;
+        height: 100px;
+        width: 100px;
+      }
+
+      .circle {
+        border-radius: 50%;
+      }
+
+      #div1 {
+        background-color: blue;
+      }
+
+      #div2 {
+        background-color: red;
+      }
+
+      #div3 {
+        background-color: yellow;
+      }
+
+      #div4 {
+        background-color: green;
+      }
+    </style>
+    <link rel="stylesheet" href="./01-intro-to-css.css" />
+  </head>
+  <body>
+    <!-- ---------------------------- inline style ----------------------------- -->
+    <h1 style="color: red; font-style: italic">Let's Make a Site!</h1>
+    <p
+      style="
+        /* border: 1px solid red; */
+        border-width: 1px;
+        border-style: double;
+        border-color: red;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos voluptates
+      tempora alias consectetur distinctio deleniti harum consequatur fugiat.
+      Cupiditate nihil mollitia nulla illo excepturi amet, eos sit qui adipisci.
+      Dolore qui consequatur impedit vero. Dignissimos quae sed eligendi
+      reiciendis adipisci optio iure minima laudantium. Obcaecati recusandae,
+      esse ducimus mollitia animi eveniet quae tempora placeat pariatur, dolore
+      temporibus, inventore quis?
+    </p>
+
+    <hr />
+    <!-- --------------------------- internal style ---------------------------- -->
+    <div id="div1" class="circle"></div>
+    <div id="div2" class="circle"></div>
+
+    <div id="div3"></div>
+    <div id="div4"></div>
+
+    <hr />
+    <!-- --------------------------- external style ---------------------------- -->
+    <img id="thumbnail" src="./image.png" />
+    <a>Visit Google</a>
+    <a href="">Visit YouTube</a>
+
+    <hr />
+    <!-- ----------------------------- color value ----------------------------- -->
+    <div style="width: 50px; height: 50px; background-color: coral"></div>
+
+    <div
+      style="width: 50px; height: 50px; background-color: rgb(255, 0, 255)"
+    ></div>
+
+    <div style="width: 50px; height: 50px; background-color: #000000"></div>
+
+    <div
+      style="
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(90deg, red, yellow);
+      "
+    ></div>
+
+    <hr />
+    <!-- ----------------------------- unit length ----------------------------- -->
+    <div style="width: 1000px; height: 100px; background-color: green"></div>
+    <div style="width: 100%; height: 100px; background-color: tomato"></div>
+
+    <div style="width: 500px; height: 500px; background-color: skyblue">
+      <div style="width: 50%; height: 50%; background-color: brown"></div>
+    </div>
+
+    <div style="width: 500px; height: 50vh; background-color: darkorange"></div>
+
+    <hr />
+
+    <!-- --------------------- margin, padding, dan border --------------------- -->
+    <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 50px">
+      Breaknews, Keracunan MBG!
+    </h2>
+    <h2>Indonesia Gagal Piala Dunia</h2>
+  </body>
+</html>

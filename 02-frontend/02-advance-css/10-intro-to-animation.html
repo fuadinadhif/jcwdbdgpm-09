@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Animation</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: cornflowerblue;
+        border-radius: 50%;
+        animation-name: beat;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      /* @keyframes beat {
+        from {
+          width: 100px;
+          height: 100px;
+        }
+        to {
+          width: 150px;
+          height: 150px;
+        }
+      } */
+
+      @keyframes beat {
+        0% {
+          width: 100px;
+          height: 100px;
+        }
+        50% {
+          width: 150px;
+          height: 150px;
+        }
+        100% {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

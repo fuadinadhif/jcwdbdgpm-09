@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid red;
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: cornflowerblue;
+      }
+
+      div:nth-child(1) {
+        background-color: hotpink;
+      }
+      div:nth-child(2) {
+        background-color: gold;
+      }
+      div:nth-child(3) {
+        background-color: greenyellow;
+      }
+      div:nth-child(4) {
+        background-color: orange;
+      }
+      div:nth-child(5) {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
+
+<!-- <div
+  style="
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin-left: auto;
+    margin-right: auto;
+  "
+></div> -->

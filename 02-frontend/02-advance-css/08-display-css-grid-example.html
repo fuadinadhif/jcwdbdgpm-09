@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Example</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        /* column-gap: 12px;
+        row-gap: 12px; */
+        gap: 20px 10px;
+        justify-items: end;
+        align-items: stretch;
+        height: 100vh;
+        margin: 0;
+      }
+
+      header,
+      nav,
+      main,
+      aside,
+      footer {
+        width: 100%;
+        background-color: cornflowerblue;
+      }
+
+      header {
+        background-color: hotpink;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav {
+        /* justify-self: start;
+        align-self: start; */
+        /* place-self: end; */
+        background-color: gold;
+      }
+      main {
+        background-color: greenyellow;
+      }
+      aside {
+        background-color: orange;
+      }
+      footer {
+        background-color: brown;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Logo</div>
+      <div>
+        <a>Product</a>
+        <a>Pricing</a>
+        <a>About</a>
+        <a>Blog</a>
+        <a>Inspiration</a>
+        <button>Get Started</button>
+      </div>
+    </header>
+    <nav>Navigation</nav>
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+  </body>
+</html>

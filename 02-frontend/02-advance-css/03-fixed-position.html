@@ -1,0 +1,43 @@
+<!-- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Position</title>
+    <style>
+      body {
+        margin: 0;
+        height: 500vh;
+      }
+
+      #parent {
+        position: relative;
+        height: 500px;
+        width: 100vw;
+        background-color: tomato;
+      }
+
+      #children1 {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 25%;
+        width: 25%;
+        background-color: beige;
+      }
+
+      #children2 {
+        height: 25%;
+        width: 25%;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="children1"></div>
+      <div id="children2"></div>
+    </div>
+  </body>
+</html>

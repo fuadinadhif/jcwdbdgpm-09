@@ -1,0 +1,43 @@
+<!-- 
+ 1. Patokan relative adalah posisi awal elementnya
+ 2. Element relative dianggap masih ada di posisi awal oleh element-element lainnya
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Position</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #parent {
+        height: 500px;
+        width: 100vw;
+        background-color: tomato;
+      }
+
+      #children1 {
+        position: relative;
+        bottom: 50px;
+        height: 25%;
+        width: 25%;
+        background-color: beige;
+      }
+
+      #children2 {
+        height: 25%;
+        width: 25%;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="children1"></div>
+      <div id="children2"></div>
+    </div>
+  </body>
+</html>

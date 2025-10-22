@@ -1,0 +1,46 @@
+<!-- 
+ 1. Patokannya adalah parent yang posisinya non-static 
+ 2. Element absolte dianggap hilang oleh element-element lainnya
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute Position</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #parent {
+        position: relative;
+        height: 500px;
+        width: 100vw;
+        background-color: tomato;
+      }
+
+      #children1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 0;
+        height: 25%;
+        width: 25%;
+        background-color: beige;
+      }
+
+      #children2 {
+        height: 25%;
+        width: 25%;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="children1"></div>
+      <div id="children2"></div>
+    </div>
+  </body>
+</html>
