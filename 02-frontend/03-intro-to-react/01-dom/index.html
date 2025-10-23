@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="colorButton">Change Background</button>
+    <script>
+      const colorButton = document.getElementById("colorButton");
+      // const body = document.querySelector("body")
+
+      colorButton.addEventListener("click", () => {
+        const randomColor = `rgb(${Math.floor(
+          Math.random() * 255
+        )}, ${Math.floor(Math.random() * 255)}, ${Math.floor(
+          Math.random() * 255
+        )})`;
+
+        document.body.style.backgroundColor = randomColor;
+      });
+    </script>
+  </body>
+</html>
