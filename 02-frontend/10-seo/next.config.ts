@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "media.lmpm.website" },
       { protocol: "https", hostname: "images.pexels.com" },
       { protocol: "https", hostname: "media.posterstore.com" },
+      { protocol: "https", hostname: "plus.unsplash.com" },
+      { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
 };
