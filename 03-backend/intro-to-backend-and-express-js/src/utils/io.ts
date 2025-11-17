@@ -7,10 +7,10 @@ interface IArticle {
 }
 
 export async function readArticles() {
-  const articles = await fs.readFile("articles.json", "utf-8");
+  const articles = await fs.readFile("article.json", "utf-8");
   return JSON.parse(articles);
 }
 
 export async function writeArticle(data: IArticle[]) {
-  await fs.writeFile("articles.json", JSON.stringify(data));
+  await fs.writeFile("article.json", JSON.stringify(data, null, 6));
 }

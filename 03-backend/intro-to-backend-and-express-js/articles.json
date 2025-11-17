@@ -1,1 +1,22 @@
-[{"id":2,"title":"Tech Giants Invest Heavily in AI Infrastructure","content":"Major technology companies including Google, Microsoft, and Amazon have announced massive investments in artificial intelligence infrastructure. The move aims to support the growing demand for AI-driven applications and tools. Experts predict that AI spending will surpass $300 billion globally by 2027."},{"id":3,"title":"Global Climate Summit Ends With Ambitious Carbon Goals","content":"World leaders concluded the Global Climate Summit with a landmark agreement to reduce global carbon emissions by 45% before 2030. The deal focuses on renewable energy development, forest conservation, and sustainable transport solutions. Environmental groups have welcomed the decision but call for stronger accountability mechanisms."},{"id":4,"title":"SpaceX Successfully Launches Next-Gen Starlink Satellites","content":"SpaceX has successfully deployed its latest batch of Starlink satellites, marking another milestone in expanding its global broadband network. The new satellites feature upgraded solar arrays and improved communication hardware designed to enhance internet coverage in remote regions worldwide."},{"id":5,"title":"Ethereum Rising","content":"Lorem ipsum dolor si amet et cetera"}]
+[
+      {
+            "id": 3,
+            "title": "Global Climate Change",
+            "content": "World leaders concluded the Global Climate Summit with a landmark agreement to reduce global carbon emissions by 45% before 2030. The deal focuses on renewable energy development, forest conservation, and sustainable transport solutions. Environmental groups have welcomed the decision but call for stronger accountability mechanisms."
+      },
+      {
+            "id": 4,
+            "title": "SpaceX Successfully Launches Next-Gen Starlink Satellites",
+            "content": "SpaceX has successfully deployed its latest batch of Starlink satellites, marking another milestone in expanding its global broadband network. The new satellites feature upgraded solar arrays and improved communication hardware designed to enhance internet coverage in remote regions worldwide."
+      },
+      {
+            "id": 5,
+            "title": "Ethereum Rising",
+            "content": "Lorem ipsum dolor si amet et cetera"
+      },
+      {
+            "id": 6,
+            "title": "Ethereum Rising",
+            "content": "Lorem ipsum dolor si amet et cetera"
+      }
+]
