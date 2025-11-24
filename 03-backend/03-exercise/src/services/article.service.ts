@@ -37,11 +37,9 @@ export async function findTotalLikesByDateRange(
   return totalLikes;
 }
 
-export async function findTotalArticlesByCategory(category: string) {
+export async function findTotalArticlesByCategory(cat: string) {
   const articles = (await readJson(filePath)) as IArticle[];
-  const filteredArticles = articles.filter(
-    (article) => article.category === category
-  );
+  const filteredArticles = articles.filter((article) => {return article.category === cat});
 
   return filteredArticles.length;
 }
@@ -53,3 +51,4 @@ export async function updateArticle() {}
 export async function removeAllArticles() {}
 
 export async function removeArticleById() {}
+

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "The Calm of Early Morning Forests",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "content": "Walking through a quiet forest at sunrise feels like stepping into a different world. The air is colder, the colors softer, and everything moves slower. It’s one of those rare moments where your mind finally stops rushing.",
+    "likes": 34,
+    "category": "nature",
+    "createdAt": "2021-01-15T08:00:00.000Z",
+    "updatedAt": null
+  },
+  {
+    "id": 2,
+    "title": "How Technology Shapes Our Daily Habits",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "content": "We check our phones before we even open our eyes fully, and that small habit already says so much about our digital lifestyle. Technology blends into every part of our day, often without us noticing the shift.",
+    "likes": 58,
+    "category": "technology",
+    "createdAt": "2021-03-02T10:30:00.000Z",
+    "updatedAt": null
+  },
+  {
+    "id": 3,
+    "title": "A Simple Guide to Staying Motivated",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+    "content": "Motivation doesn’t magically appear every morning. Most days, it’s a small push—drinking water, stretching, or cleaning your desk—that gets the engine running. Consistency matters more than inspiration.",
+    "likes": 22,
+    "category": "lifestyle",
+    "createdAt": "2021-05-10T14:00:00.000Z",
+    "updatedAt": null
+  },
+  {
+    "id": 4,
+    "title": "Capturing Emotions Through Portrait Photography",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
+    "content": "Good portraits don’t focus on perfect poses—they capture small expressions you almost miss. A slight smile, a glance away, or a relaxed posture can tell a deeper story than a staged photo.",
+    "likes": 77,
+    "category": "photography",
+    "createdAt": "2021-06-18T09:45:00.000Z",
+    "updatedAt": null
+  },
+  {
+    "id": 5,
+    "title": "The Beauty of Slow Living",
+    "image": "https://images.unsplash.com/photo-1528476513691-07e6f563d97a",
+    "content": "Slow living doesn’t mean doing nothing; it means doing things with intention. Even simple routines like making tea or reading before bed become meaningful when you’re not rushing through them.",
+    "likes": 19,
+    "category": "lifestyle",
+    "createdAt": "2021-07-22T16:10:00.000Z",
+    "updatedAt": null
+  }
+]
