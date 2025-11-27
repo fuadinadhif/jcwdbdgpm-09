@@ -2,8 +2,8 @@
   "name": "07-orm-prisma",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx --watch src/app.ts",
-    "start": "npm run build && node dist/app.js",
+    "dev": "tsx --watch src/server.ts",
+    "start": "npm run build && node dist/server.js",
     "seed": "tsx prisma/seed.ts"
   },
   "type": "module",

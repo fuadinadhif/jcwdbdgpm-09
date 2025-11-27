@@ -11,23 +11,55 @@ import authRoutes from "./routes/auth.route.js";
 import eventRoutes from "./routes/event.route.js";
 import orderRoutes from "./routes/order.route.js";
 
-const app: Application = express();
-const PORT: number = 8000;
+import {
+  notFoundErrorHandler,
+  globalErrorHandler,
+} from "./middlewares/error.middleware.js";
 
-app.use(express.json());
-app.use(cookieParser());
+class App {
+  public app: Application;
+  private readonly PORT: number;
 
-app.get("/status", (req: Request, res: Response) => {
-  res.status(200).json({
-    message: "API running",
-    uptime: Math.round(process.uptime()) + " " + "seconds",
-  });
-});
+  constructor(port: number) {
+    this.app = express();
+    this.PORT = port;
 
-app.use("/api/auth", authRoutes);
-app.use("/api/events", eventRoutes);
-app.use("/api/orders", orderRoutes);
+    this.initializeMiddlewares();
+    this.initializeStatusRoute();
+    this.initializeRoutes();
+    this.intializeErrorHandler();
+  }
 
-app.listen(PORT, () => {
-  console.info(`Server is listening on port: ${PORT}`);
-});
+  private initializeMiddlewares(): void {
+    this.app.use(express.json());
+    this.app.use(cookieParser());
+  }
+
+  private initializeStatusRoute(): void {
+    this.app.get("/status", (req: Request, res: Response) => {
+      res.status(200).json({
+        message: "API running",
+        uptime: Math.round(process.uptime()) + " " + "seconds",
+      });
+    });
+  }
+
+  private initializeRoutes(): void {
+    this.app.use("/api/auth", authRoutes);
+    this.app.use("/api/events", eventRoutes);
+    this.app.use("/api/orders", orderRoutes);
+  }
+
+  private intializeErrorHandler(): void {
+    this.app.use(notFoundErrorHandler);
+    this.app.use(globalErrorHandler);
+  }
+
+  public listen(): void {
+    this.app.listen(this.PORT, () =>
+      console.info(`Server is listening on port: ${this.PORT}`)
+    );
+  }
+}
+
+export default App;
