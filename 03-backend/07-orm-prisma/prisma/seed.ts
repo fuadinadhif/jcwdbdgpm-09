@@ -1,5 +1,6 @@
 import "dotenv/config";
 import { PrismaClient } from "../src/generated/prisma/client.js";
+import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
 
@@ -27,7 +28,7 @@ async function seed() {
         name: "Ayu Putri",
         username: "ayu.putri",
         email: "ayu.putri@festival.id",
-        password: "ayupass",
+        password: await bcrypt.hash("ayupass", 12),
         role: "EVENT_ORGANIZER",
       },
       {
