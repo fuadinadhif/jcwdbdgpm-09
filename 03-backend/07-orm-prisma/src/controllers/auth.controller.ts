@@ -1,19 +1,23 @@
 import { type NextFunction, type Request, type Response } from "express";
 
 import { AuthService } from "../services/auth.service.js";
+import { registerSchema, loginSchema } from "../validations/auth.validation.js";
 
 const authService = new AuthService();
 
 export class AuthController {
   async register(req: Request, res: Response, next: NextFunction) {
     try {
-      const { name, username, email, password } = req.body;
+      const { name, username, email, password, role } = registerSchema.parse(
+        req.body
+      );
 
       const user = await authService.register({
         email,
         username,
         password,
         name,
+        role,
       });
 
       res.status(201).json(user);
@@ -24,7 +28,7 @@ export class AuthController {
 
   async login(req: Request, res: Response, next: NextFunction) {
     try {
-      const { username, password } = req.body;
+      const { username, password } = loginSchema.parse(req.body);
 
       const user = await authService.validateUser(username, password);
       const authToken = await authService.generateToken(user);

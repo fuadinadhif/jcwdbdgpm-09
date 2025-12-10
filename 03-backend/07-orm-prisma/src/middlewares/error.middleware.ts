@@ -1,5 +1,6 @@
 import { type Request, type Response, type NextFunction } from "express";
 import { AppError } from "../errors/app.error.js";
+import z from "zod";
 
 export function notFoundErrorHandler(req: Request, res: Response) {
   res.status(404).json({ message: `Route ${req.originalUrl} not found` });
@@ -11,6 +12,14 @@ export function globalErrorHandler(
   res: Response,
   next: NextFunction
 ) {
+  console.error(error);
+
+  if (error instanceof z.ZodError) {
+    return res
+      .status(400)
+      .json({ message: "Validation failed", errors: z.flattenError(error) });
+  }
+
   if (error instanceof AppError) {
     return res.status(error.statusCode).json({ message: error.message });
   }

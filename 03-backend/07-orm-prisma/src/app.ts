@@ -10,11 +10,14 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.route.js";
 import eventRoutes from "./routes/event.route.js";
 import orderRoutes from "./routes/order.route.js";
+import imageRoutes from "./routes/image.route.js";
 
 import {
   notFoundErrorHandler,
   globalErrorHandler,
 } from "./middlewares/error.middleware.js";
+
+import { logger } from "./libs/logger.lib.js";
 
 class App {
   public app: Application;
@@ -36,7 +39,7 @@ class App {
   }
 
   private initializeStatusRoute(): void {
-    this.app.get("/status", (req: Request, res: Response) => {
+    this.app.get("/api/status", (req: Request, res: Response) => {
       res.status(200).json({
         message: "API running",
         uptime: Math.round(process.uptime()) + " " + "seconds",
@@ -48,6 +51,7 @@ class App {
     this.app.use("/api/auth", authRoutes);
     this.app.use("/api/events", eventRoutes);
     this.app.use("/api/orders", orderRoutes);
+    this.app.use("/api/images", imageRoutes);
   }
 
   private intializeErrorHandler(): void {
@@ -57,7 +61,7 @@ class App {
 
   public listen(): void {
     this.app.listen(this.PORT, () =>
-      console.info(`Server is listening on port: ${this.PORT}`)
+      logger.info(`Server is listening on port: ${this.PORT}`)
     );
   }
 }

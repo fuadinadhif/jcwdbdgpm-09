@@ -1,0 +1,89 @@
+{"level":"info","message":"Server is listening on port: 8000"}
+{"level":"info","message":"Server is listening on port: 8000"}
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+{"level":"info","message":"Server is listening on port: 8000","metadata":{},"timestamp":"2025-12-09T10:02:39.577Z"}
+[2025-12-09T10:03:09.063Z][info]: Server is listening on port: 8000
+{"level":"info","message":"Server is listening on port: 8000","metadata":{},"timestamp":"2025-12-09T10:03:50.535Z"}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:04:07.039Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:04:37.969Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:05:41.748Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:06:13.055Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:06:18.665Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:06:25.155Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:06:52.569Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:07:07.014Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:07:24.851Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:08:10.452Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:08:17.335Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:10:32.173Z"
+}
+{
+  "level": "info",
+  "message": "Server is listening on port: 8000",
+  "metadata": {},
+  "timestamp": "2025-12-09T10:11:04.036Z"
+}

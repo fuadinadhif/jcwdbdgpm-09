@@ -1,4 +1,5 @@
-import { JwtPayload } from "jsonwebtoken";
+import { type JwtPayload } from "jsonwebtoken";
+import type { RoleType } from "../generated/prisma/enums.ts";
 
 export interface CustomJwtPayload extends JwtPayload {
   id: string;
@@ -12,6 +13,7 @@ export interface IRegister {
   username: string;
   email: string;
   password: string;
+  role?: RoleType | undefined;
 }
 
 export interface IExistingUser {

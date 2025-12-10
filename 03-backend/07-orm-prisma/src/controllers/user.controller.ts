@@ -1,5 +1,6 @@
 import { type Request, type Response } from "express";
 import { PrismaClient } from "../generated/prisma/client.js";
+import { AppError } from "../errors/app.error.js";
 
 const prisma = new PrismaClient();
 
@@ -9,15 +10,20 @@ export async function getAllUser(req: Request, res: Response) {
 }
 
 export async function getUserById(req: Request, res: Response) {
-  const id = Number(req.params.id);
+  const id = req.params.id;
+
+  if (!id) throw new AppError(400, "Id is missing");
+
   const user = await prisma.user.findUnique({ where: { id } });
 
   res.status(200).json(user);
 }
 
 export async function updateUser(req: Request, res: Response) {
-  const id = Number(req.params.id);
+  const id = req.params.id;
   const updatedData = req.body;
+
+  if (!id) throw new AppError(400, "Id is missing");
 
   const updatedUser = await prisma.user.update({
     where: { id },
@@ -33,7 +39,10 @@ export async function deleteAllUser(req: Request, res: Response) {
 }
 
 export async function deleteUserById(req: Request, res: Response) {
-  const id = Number(req.params.id);
+  const id = req.params.id;
+
+  if (!id) throw new AppError(400, "Id is missing");
+
   await prisma.user.delete({ where: { id } });
   res.status(200).json({ message: `User with id: ${id} has been deleted` });
 }
